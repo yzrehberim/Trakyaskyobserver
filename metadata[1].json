@@ -1,0 +1,7 @@
+{
+  "name": "Trakya SkyObserver",
+  "description": "Trakya bölgesi için özel olarak tasarlanmış gökyüzü gözlem uygulaması. MVP Planı: 1. Konum ve Zaman bazlı gökyüzü simülasyonu (React + SVG). 2. Gözlem kayıt defteri (LocalStorage). 3. Gemini AI destekli 'Gökyüzü Asistanı' (Anlık gök olayları analizi). 4. Responsive 'Gece Modu' arayüzü.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

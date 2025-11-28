@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trakya SkyObserver</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              space: {
+                950: '#050608',
+                900: '#0B0D17',
+                800: '#15192B',
+                700: '#1F2437',
+              },
+              teal: {
+                400: '#2DA6B2',
+                500: '#21808D',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'spin-slow': 'spin 120s linear infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "astronomy-engine": "https://esm.sh/astronomy-engine@2.1.19",
+    "docx": "https://esm.sh/docx@8.5.0?bundle",
+    "file-saver": "https://esm.sh/file-saver@2.0.5"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-space-950 text-gray-100 font-sans antialiased selection:bg-teal-500 selection:text-white overflow-x-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
